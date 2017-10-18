@@ -5,3 +5,16 @@
 - Hệ thống sẽ giải quyết được những khó khăn trên. Khi mà công nghệ thông tin phát triển mạnh, mạng internet về tận từng hộ gia đình, người dân thường xuyên tiếp xúc với máy tính, mạng internet thì hệ thống ra đời là rất phù hợp với tình hình thực tiễn. Đặc biệt với những người bận rộn không có thời gian ra bến xe mua vé thì với những cái click chuột mà mua được vé xe thì điều này thật có ý nghĩa.
 - Khi hệ thống đưa vào hoạt động không chỉ mạng lại sự tiện lợi cho người dân trong việc mua vé xe mà còn giúp các công ty vận tải phục vụ hành khách tốt hơn. Các công ty sẽ quản lý tốt hơn lượng vé bán ra, có thể bán vé xe tới tận tay người có nhu cầu thực sự. Từ đó nâng cao chất lượng phục vụ, nâng cao sức cạnh tranh của công ty và góp phần giữ gìn trật tự xã hội, xây dựng xã hội văn minh hơn.
 - Hệ thống được xây dựng dựa trên sự khảo sát thực tế ở các bến xe. Đa số các công ty vận tải vẫn chưa có hệ thống bán vé xe qua website mà vẫn bán vé theo cách truyền thống. Vì vậy hệ thống đặt vé xe khách chất lượng cao là một đòi hỏi cần thiết để các công ty vận tải phục vụ tốt hơn cho những thượng đế của mình.
+1. Mục tiêu của đề tài:
+•	Xây dựng một hệ thống giúp khách hàng có thể đặt vé khách trực tuyến
+•	Hỗ trợ nhân viên có thể dễ dàng thực hiện các nghiệp vụ quản lý các chuyến xe của công ty.
+•	Nhân viên bán vé có thể dễ dàng cập nhật khách hàng gọi điện thoại đến đặt vé.
+•	Hệ thống hỗ trợ phân quyền người dùng, đảm bảo tính bảo mật, an toàn của hệ thống.
+•	Giúp nhân viên quản lý lập các báo cáo phục vụ lãnh đạo trong việc quản lý, điều hành công ty.
+2.Phạm vi đề tài
+- Tạo ra một hệ thống website cho một công ty xe khách chất lượng cao nhằm cho phép khách hàng đặt mua vé trực tuyến. 
+- Khách hàng có thể chọn đặt thông tin về chuyến xe mình cần đi; nhân viên bán vé có thể xem thông tin về những khách hàng trên chuyến xe đó.
+3. Ngôn ngữ lập trình
+ - Ngôn ngữ lập trình PHP và framework Laravel.
+- Sử dụng Bootstrap, HTML, CSS, CSS3, jquery, javascript.
+- css dùng less hoặc scss để viết.
