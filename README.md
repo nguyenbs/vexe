@@ -11,7 +11,7 @@
 -	Nhân viên bán vé có thể dễ dàng cập nhật khách hàng gọi điện thoại đến đặt vé.
 -	Hệ thống hỗ trợ phân quyền người dùng, đảm bảo tính bảo mật, an toàn của hệ thống.
 -	Giúp nhân viên quản lý lập các báo cáo phục vụ lãnh đạo trong việc quản lý, điều hành công ty.
-### 2.Phạm vi đề tài
+### 2. Phạm vi đề tài
 - Tạo ra một hệ thống website cho một công ty xe khách chất lượng cao nhằm cho phép khách hàng đặt mua vé trực tuyến. 
 - Khách hàng có thể chọn đặt thông tin về chuyến xe mình cần đi; nhân viên bán vé có thể xem thông tin về những khách hàng trên chuyến xe đó.
 ### 3. Ngôn ngữ lập trình
