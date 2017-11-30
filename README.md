@@ -1,20 +1,53 @@
-**ĐỀ TÀI : XÂY DỰNG TRANG HỆ THỐNG ĐẶT VÉ XE KHÁCH CHẤT LƯỢNG CAO.**
-- Kinh tế xã hội ngày càng phát triển, hội nhập kinh tế quốc tế ngày càng mạnh, sự chuyển dịch cơ cấu kinh tế giữa các vùng miền ngày càng cao. Cơ cấu lao động cũng có sự dịch chuyển mạnh mẽ. Từ đó kéo theo sự di chuyển chỗ ở, chỗ làm việc của rất nhiều người. Mọi người có nhu cầu đi lại ngày càng nhiều. Mặt khác, do kinh  tế phát triển nên nhu cầu đi thăm quan, thăm viếng người nhà ở xa tăng.
-- Trên thực tế nhu cầu đi lại của người dân tăng đột biến. Và với cách mua và  bán vé xe truyền thống đã không đáp ứng được nhu cầu bức xúc đó. Thường diễn ra cảnh chen lấn xô đẩy để mua vé. Từ thực tế đó đã gây cho người dân rất nhiều bức xúc như chờ vài tiếng mà không mua được vé, đến lượt mua vé thì được thông báo hết vé. Còn đối với các công ty vận tải thì cũng gặp khó khăn trong việc tổ chức bán vé xe. Cảnh chen lấn xô đẩy đó đã tạo điều kiện cho bọn móc túi, cướp giật, bán vé chợ đen hoạt động. Càng làm cho tình hình thêm tồi tệ, người dân và doanh nghiệp càng thêm bức xúc.
-- **Từ những bức xúc đó, nên chúng em đã quyết định chọn đề xây dựng trang hệ thống đặt vé xe khách chất lượng cao.**
-- Hệ thống sẽ giải quyết được những khó khăn trên. Khi mà công nghệ thông tin phát triển mạnh, mạng internet về tận từng hộ gia đình, người dân thường xuyên tiếp xúc với máy tính, mạng internet thì hệ thống ra đời là rất phù hợp với tình hình thực tiễn. Đặc biệt với những người bận rộn không có thời gian ra bến xe mua vé thì với những cái click chuột mà mua được vé xe thì điều này thật có ý nghĩa.
-- Khi hệ thống đưa vào hoạt động không chỉ mạng lại sự tiện lợi cho người dân trong việc mua vé xe mà còn giúp các công ty vận tải phục vụ hành khách tốt hơn. Các công ty sẽ quản lý tốt hơn lượng vé bán ra, có thể bán vé xe tới tận tay người có nhu cầu thực sự. Từ đó nâng cao chất lượng phục vụ, nâng cao sức cạnh tranh của công ty và góp phần giữ gìn trật tự xã hội, xây dựng xã hội văn minh hơn.
-- Hệ thống được xây dựng dựa trên sự khảo sát thực tế ở các bến xe. Đa số các công ty vận tải vẫn chưa có hệ thống bán vé xe qua website mà vẫn bán vé theo cách truyền thống. Vì vậy hệ thống đặt vé xe khách chất lượng cao là một đòi hỏi cần thiết để các công ty vận tải phục vụ tốt hơn cho những thượng đế của mình.
-### 1. Mục tiêu của đề tài:
-- Xây dựng một hệ thống giúp khách hàng có thể đặt vé khách trực tuyến
-- Hỗ trợ nhân viên có thể dễ dàng thực hiện các nghiệp vụ quản lý các chuyến xe của công ty.
--	Nhân viên bán vé có thể dễ dàng cập nhật khách hàng gọi điện thoại đến đặt vé.
--	Hệ thống hỗ trợ phân quyền người dùng, đảm bảo tính bảo mật, an toàn của hệ thống.
--	Giúp nhân viên quản lý lập các báo cáo phục vụ lãnh đạo trong việc quản lý, điều hành công ty.
-### 2. Phạm vi đề tài
-- Tạo ra một hệ thống website cho một công ty xe khách chất lượng cao nhằm cho phép khách hàng đặt mua vé trực tuyến. 
-- Khách hàng có thể chọn đặt thông tin về chuyến xe mình cần đi; nhân viên bán vé có thể xem thông tin về những khách hàng trên chuyến xe đó.
-### 3. Ngôn ngữ lập trình
- - Ngôn ngữ lập trình PHP và framework Laravel.
-- Sử dụng Bootstrap, HTML, CSS, CSS3, jquery, javascript.
-- css dùng less hoặc scss để viết.
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
+
+## About Laravel
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+
+## Learning Laravel
+
+Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+
+If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+
+- **[Vehikl](http://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[British Software Development](https://www.britishsoftware.co)**
+- **[Styde](https://styde.net)**
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
