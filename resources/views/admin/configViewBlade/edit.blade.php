@@ -44,9 +44,14 @@
                                     @endif      
                       
                         <div class="form-group">
-                            <label>Nội Dung: </label>
+                            <label>Nội Dung Tiếng Việt: </label>
                             <br>
                             <textarea class="form-control" name="value" cols="120" rows="20" value="">{!! $data->value !!}</textarea>
+                         </div>
+                        <div class="form-group">
+                            <label>Nội Dung Tiếng Anh: </label>
+                            <br>
+                            <textarea class="form-control" name="value_en" cols="120" rows="20" value="">{!! $data->value_en !!}</textarea>
                          </div>
                          <div class="form-group form-md-line-input">
                                 <label  class="col-sm-2 control-label" for="status">Trạng Thái</label>

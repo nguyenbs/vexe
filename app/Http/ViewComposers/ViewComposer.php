@@ -5,42 +5,22 @@ namespace App\Http\ViewComposers;
 use Illuminate\Contracts\View\View;
 use App\Models\ConfigViewBlade;
 use App\Models\ImageViewBlade;
+use App;
 class ViewComposer
 {
-	protected  $hotLine =[];
-	protected $img_logo_footer = [];
 	public function __construct() 
     {	  
-      $hot_line = ConfigViewBlade::where('name', 'hot_line')->first();
-      $this->hot_line = $hot_line['value'];
-
-      $header_help = ConfigViewBlade::where('name', 'header-help')->first();
-      $this->header_help = $header_help['value'];
-
-      $header_place = ConfigViewBlade::where('name', 'header-place')->first();
-      $this->header_place = $header_place['value'];
-
-      $header_slogan = ConfigViewBlade::where('name', 'header-slogan')->first();
-      $this->header_slogan = $header_slogan['value'];
-
-      $content_itinerary = ConfigViewBlade::where('name', 'content-itinerary')->first();
-      $this->content_itinerary = $content_itinerary['value'];
-
-      $text_slide = ConfigViewBlade::where('name', 'text-slide')->first();
-      $this->text_slide = $text_slide['value']; 
-
-      $garage_network = ConfigViewBlade::where('name', 'garage-network')->first();
-      $this->garage_network = $garage_network['value'];
-
-      $xxx = ConfigViewBlade::where('name', 'xxx')->first();
-      $this->xxx = $xxx['value']; 
-
-      $content_news = ConfigViewBlade::where('name', 'news')->first();
-      $this->content_news = $content_news['value'];
-
-      $footer_info = ConfigViewBlade::where('name', 'footer-info')->first();
-      $this->footer_info = $footer_info['value'];
-
+      $locale = App::getLocale(); 
+      
+      $configViews = ConfigViewBlade::all();
+      foreach ($configViews as $configView) {
+            if ($locale == 'en') {
+                $data_configView[$configView->name] = $configView->value_en;
+            } else {
+                $data_configView[$configView->name] = $configView->value;
+            }
+        }
+      $this->data_configView = $data_configView;
       $img_logo_footer = ImageViewBlade::where('name', 'footer-logo')->first();
       $this->footer_logo = $img_logo_footer['images'];
 
@@ -58,16 +38,7 @@ class ViewComposer
     }
 	public function compose(View $view)
   	{
-    	$view->with('hot_line',$this->hot_line);
-      $view->with('header_help',$this->header_help);
-      $view->with('header_place',$this->header_place);
-      $view->with('header_slogan',$this->header_slogan);
-      $view->with('content_itinerary',$this->content_itinerary );
-      $view->with('xxx',$this->xxx );
-      $view->with('text_slide',$this->text_slide );
-      $view->with('garage_network',$this->garage_network );
-      $view->with('content_news',$this->content_news );
-      $view->with('footer_info',$this->footer_info );
+    	$view->with('data_configView',$this->data_configView);
       $view->with('img_logo_footer',$this->footer_logo);
       $view->with('footer_certificate1',$this->footer_certificate1);
       $view->with('footer_certificate2',$this->footer_certificate2);

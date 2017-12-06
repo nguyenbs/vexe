@@ -49,7 +49,7 @@
                 <tr>
                   <th style="text-align: center;">{{trans('news.admin_stt')}}</th>
                   <th style="text-align: center;">Tiêu Đề</th>
-                  <th style="text-align: center;">Nội Dung</th>
+                  <th style="text-align: center;">Nội Dung Tiếng Việt</th>
                   <th style="text-align: center;">Trạng Thái</th>
                   <th style="text-align: center;">{{trans('admin.admin_func')}}</th>
                 </tr>

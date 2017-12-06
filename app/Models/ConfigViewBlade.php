@@ -17,5 +17,5 @@ class ConfigViewBlade extends Model
 	/**
 	 * @var array guarded column
 	 */
-	protected $fillable = array('id', 'name', 'value');
+	protected $fillable = array('id', 'name', 'value', 'value_en');
 }

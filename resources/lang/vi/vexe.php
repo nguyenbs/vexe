@@ -12,7 +12,9 @@ return array(
 	'logout' => 'Đăng xuất',
 	'login'  => 'Đăng nhập',
 	'car_cpm' => 'Hãng xe',
-
+	'language' => 'Ngôn ngữ',
+	'eng'	=> 'Tiếng Anh',
+	'vietnamese' => 'Tiếng Việt',
 
 	//Home Page
 	'one_way' => "Một chiều",
@@ -42,6 +44,7 @@ return array(
 	'today' => 'Hôm nay',   
 	'title_departPlace' => 'Chọn điểm đi...',
 	'title_destination' => 'Chọn điểm đến...',
+	'choose_time' => 'Chọn ngày đi',
 	'find_ticket_list' => 'Tìm vé xe rẻ',
 	'time_start' => 'Giờ đi',
 	'time_back'  => 'Giờ về',
@@ -86,6 +89,7 @@ return array(
 	'ticket_today'=> 'Vé xe khách hôm nay',
 	'get_date_start' => 'Chọn ngày đi',
 	'get_date_back'  => 'Chọn ngày về',
+	'rate' => 'đánh giá',
  
 	//Validate 
 	'required_name' => 'Vui lòng nhập họ tên!!!',

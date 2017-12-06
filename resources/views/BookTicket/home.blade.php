@@ -6,15 +6,15 @@
         <div class="col-md-12- col-ms-12 col-xs-12">
           <div id="hot-line">
           <i class="fa fa-phone"></i>
-          {{ $hot_line }}
+          {{ $data_configView['hot-line'] }}
           </div>
         <div class="teaser">
-          {{ $header_slogan }}
+          {{ $data_configView['header-slogan'] }}
           <br>
-          <span>({{ $header_place }})</span>
+          <span>({{ $data_configView['header-place'] }})</span>
         </div>
         <div class="htp">
-            {!! $header_help !!}
+            {!! $data_configView['header-help'] !!}
         </div>
         </div>
       </div>
@@ -133,8 +133,8 @@
     <div class="container">
       <div >
         <h2 class="text-center h2-text col-txt">
-        <span>{{ $content_itinerary }}</span>
-        <MARQUEE class="text-run"><b>{{ $text_slide }}</b></MARQUEE>
+        <span>{{ $data_configView['content-itinerary'] }}</span>
+        <MARQUEE class="text-run"><b>{{ $data_configView['text-slide'] }}</b></MARQUEE>
         </h2>
         <div class="clearfix" style="height: 44px">
           <ul class="nav nav-tabs clearfix a-link" role="tablist">
@@ -246,7 +246,7 @@
       <div >
         <div class="text-bus clearfix">
           <div class="col-xs-12 col-sm-12 col-md-12 " style="padding-left: 0px;">
-            {!! $garage_network !!}
+            {!! $data_configView['garage-network'] !!}
           </div>
         </div>
 

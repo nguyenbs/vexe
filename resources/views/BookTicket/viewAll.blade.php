@@ -57,7 +57,7 @@
                            </select>
         </div>
         <div class="form-group departDate-fg">
-          <input id="date_start" readonly="" name="date_start" type="text" class="input-txt date calendar-search hasDatepicker" placeholder="Chọn ngày đi" accesskey="1" style="height: 34px;margin-top: 2px;">
+          <input id="date_start" readonly="" name="date_start" type="text" class="input-txt date calendar-search hasDatepicker" placeholder="{{ trans('vexe.choose_time')}}" accesskey="1" style="height: 34px;margin-top: 2px;">
           <div class="form-group quick-date-select fr hidden-xs hidden-sm">
             <button type="button" class="fl btn btn-gray btn-today" >{{ trans('vexe.today')}}</button>
           </div>
@@ -417,7 +417,7 @@
                   @if ($list->rating->count == 0)
                   <span class="BusQualityRating blue "> 0 <span></span> {{ trans('vexe.notable_carcpn')}} <i class="fa fa-sort-desc vt"></i></a>
                   @else 
-                  <span class="BusQualityRating blue ">{{round(($list->rating->overall+$list->rating->quality+$list->rating->intime+$list->rating->service)/($list->rating->count*4),2)}}/4</span> {{$list->rating->count}} <span></span> đánh giá <i class="fa fa-sort-desc vt"></i></a>
+                  <span class="BusQualityRating blue ">{{round(($list->rating->overall+$list->rating->quality+$list->rating->intime+$list->rating->service)/($list->rating->count*4),2)}}/4</span> {{$list->rating->count}} <span></span> {{ trans('vexe.rate')}}<i class="fa fa-sort-desc vt"></i></a>
                   @endif
                   <div class="pop-vxr w300 bus-rating-tip " id="danhgia_{{$list->car_id}}">
                     <div class="head-pop clearfix ">
@@ -537,21 +537,21 @@
     <!--main-->
     <form id="formCustomer" name="formCustomer" action="{{route('ticket.postCheckout')}}" method="POST" >
   {{Form::token()}}
-  <div class="content-infor " id="choncho">
+
+   <div class="content-infor " id="choncho">
     <div class="container ">
       <div id="main-infor " class="booking-expand ">
         <div class="row " style="margin-bottom: -10px;">
           <div class="col-md-12 ">
             <div class=" bg-primary ">
               <div class="col-md-8 inf-xs text-inf ">{{ trans('vexe.ticket_info')}}</div>
+              {{-- <div class="hidden-xs col-md-4 hidden-sm text-inf ">Bấm ghế trống để chọn, bấm lần nữa để huỷ</div> --}}
               <div class="hidden-xs hidden-sm col-md-4 text-inf ">{{ trans('vexe.passenger_info')}} <span class="btn btn-close-road "><img src="../images/vexe/btn-close.png " alt=" " class="online-button"></span></div>
-            </div>
             </div>
           </div>
         </div>
         <!--row-->
-
-      <div class="white-1 ">
+        <div class="white-1 ">
           <div class="row " style="margin-bottom: -55px;">
             <div class="col-md-7 col-md-offset-0 col-xs-10 col-xs-offset-1 hidden-xs ">
               <div class="table-info ">
@@ -560,9 +560,12 @@
                   <li><span class="span-text-2 ">{{ trans('vexe.itinerary')}}:</span><b class="pull-right ">{{ $list->itinerary['departPlace'] }} → {{ $list->itinerary['destination']}} </b></li>
                    <input type="hidden" name="itinerary_id" value="{{ $list->id }}">
                   <li><span class="span-text-2 ">{{ trans('vexe.date_start')}}:</span><b class="pull-right ">{{ $date_start }} </b></li>
+                  <li><span class="span-text-2 ">{{ trans('vexe.time_start')}}:</span><b class="pull-right ">{{ $list->time_start}} </b></li>
                   <input type="hidden" value="{{ $date_start }}" name="date_start">
                   <input type="hidden" value="{{  $list->time_start }}" name="time_start">
-                  <li><span class="span-text-2 ">{{ trans('vexe.time_start')}}:</span><b class="pull-right ">{{ $list->time_start}} </b></li>
+                  <input type="hidden" value="{{  $list->time_back }}" name="time_back">
+                  <input type="hidden" value="{{  $list->date_back }}" name="date_back">
+                  
                   <li><span class="span-text-2 ">{{ trans('vexe.departPlace_address')}}:</span><b class="pull-right ">{{ $list->itinerary['departPlace'] }} </b></li>
                   <li><span class="span-text-2 ">{{ trans('vexe.destination_address')}}:</span><b class="pull-right ">{{ $list->itinerary['destination']}}</b></li>
                   <input type="hidden" name="car_id" value="{{ $list->car_id}}">
@@ -575,7 +578,7 @@
               <!--  <div class="hidden-md hidden-sm "><h4 class="text-center hidden-xs ">THÔNG TIN KHÁCH HÀNG</h4></div> -->
               <div class="form-group CustomerFullName ">
                 <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 ">
-                  <label class="col-md-12 pl0 pr0 col-sm-3 control-label text-left user-control-label ">{{ trans('vexe.name_passenger')}}:</label>
+                  <label class="col-md-12 pl0 pr0 col-sm-3 control-label text-left user-control-label">{{ trans('vexe.name_passenger')}}:</label>
                   <input id="name"  name="name" type="text " class="form-control input-vxr " value="" placeholder="{{ trans('vexe.name_passenger')}}" >
                 </div>
               </div>
@@ -585,7 +588,7 @@
               </div>
 
                <div class="col-md-12 col-sm-12 pl0 pr0 ">
-                <label class="col-md-8 pl0 pr0 control-label text-left user-control-label ">{{ trans('vexe.email')}}</label>
+                <label class="col-md-8 pl0 pr0 control-label text-left user-control-label">{{ trans('vexe.email')}}:</label>
                 <input id="email" name="email" type="text " class="form-control input-vxr " value="" placeholder="Email ">
               </div>
 
@@ -615,10 +618,8 @@
             <div class="price-col ">
               <div class="col-md-4 col-md-offset-0 col-xs-5 col-xs-offset-1 ">
                 <span clas="span-text ">{{ trans('vexe.ticket_fare')}}:</span>
-                <div id="single" data-price='{{ $list->itinerary['ticket_fare']}} '><b class="b-text" >{{ $list->itinerary['ticket_fare']}}</b></div>
+                <div id="single" data-price='{{ $list->itinerary['ticket_fare']}} '><b class="b-text" >{{ $list->itinerary['ticket_fare']}} </b></div>
               </div>
-              <input type="hidden" value="" name="date_back">
-              <input type="hidden" value="" name="time_back">
               <input type="hidden" name="price_one" value="{{ $list->itinerary['ticket_fare']}}">
               <div class="col-md-4 col-md-offset-0 col-xs-5 col-xs-offset-0 ">
                 <div class="col-md-6 col-xs-12 ">
@@ -636,7 +637,7 @@
               <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2 ">
                 <div class="form-group mb0 ">
                   <div class="col-md-offset-3 col-md-8 col-sm-11 pl0 pr0 cont-container text-center ">
-                    <button type="button " class="cont-btn btn btn-vxr-lg btn-vxr-lg-action " style="margin-top: 0px">
+                    <button type="button " class="cont-btn btn btn-vxr-lg btn-vxr-lg-action " style="margin-top: 0px;">
                       {{ trans('vexe.next')}} <i class="glyphicon glyphicon-chevron-right f14 "></i>
                     </button>
                   </div>
@@ -646,13 +647,12 @@
           </div>
           <!--row-3-->
         </div>
-
         <!--white-->
         <div class="row ">
           <div class="col-md-12 col-xs-12 ">
             <h6 class="text-wblue thin200 pull-left pl5 selfie ">{{ trans('vexe.slogan')}}</h6>
             <img class="logo-sm " src="../images/vexe/logo-sm.svg " alt=" ">
-            <h6 class="text-wblue thin200 pull-right pr5 ">{{ trans('vexe.question_contact')}}:  <b><a class="hotline-link " href="tel:1900 969681 ">{{ $hot_line }}</a></b> {{-- - <b><a class="hotline-link " href="tel:1900 7070 ">1900 7070</a></b> --}}</h6>
+            <h6 class="text-wblue thin200 pull-right pr5 ">{{ trans('vexe.question_contact')}}:  <b><a class="hotline-link " href="tel:{{ $data_configView['hot-line'] }} ">{{ $data_configView['hot-line'] }}</a></b></h6>
           </div>
         </div>
       </div>

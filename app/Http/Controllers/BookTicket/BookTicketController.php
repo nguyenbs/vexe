@@ -22,6 +22,7 @@ use App\Models\ConfigViewBlade;
 use App\Models\Rating;
 use App\Models\Station;
 use Session;
+use App;
 class BookTicketController extends Controller
 {   
 
@@ -170,7 +171,8 @@ class BookTicketController extends Controller
       $place = Place::all();
       $car_company = CarCompany::all();
       // dd($car_company);
-      $news = News::orderBy( 'created_at', 'DESC')->paginate(4);
+      $locale = App::getLocale(); 
+      $news = News::where( 'Lang', $locale )->orderBy('created_at', 'DESC')->paginate(4);
       $station = Station::orderBy('id', 'DESC')->paginate(8);
       // dd($station);
       $hanoi = Itinerary::where( 'departPlace', 'Hà Nội')->paginate(10);
@@ -273,7 +275,6 @@ class BookTicketController extends Controller
     {	
       $footer = ConfigViewBlade::all();
     	$data = $request->all(); 
-      // dd($data);
       $sum_price = $data['price_one'] * $data['numberTicket'];
       if($data[ 'date_back']==NULL){
         $ticket_type =1;

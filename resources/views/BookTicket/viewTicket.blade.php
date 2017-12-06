@@ -30,7 +30,7 @@
                     <img src="../images/logo.svg" class="logo img-reponsive"></a>
                 </div>
                 <div class="col-md-6 middle text-center">
-                    <p class="text-white">{{ trans('vexe.slogan_viewTicket')}}</p>
+                    <p class="text-white">{{ trans('vexe.slogan1_viewTicket')}}</p>
                     <h5 class="h5-tt">{{ trans('vexe.slogan2_viewTicket')}}</h5>
                 </div>
                 {{-- <div class="col-md-3 header-blue-right-menu time-left">
@@ -131,17 +131,6 @@
                                         </p>
 
                                         <div class="form-group total-container pull-right mt10">
-                                           <!--  <label class="old-total-fare-row pr10">
-                                                <span>Tạm tính: </span>
-                                                <span class="txtOldTotalFare text-pr-mb"></span>
-                                            </label> -->
-                                            <!-- <label class="pr10 coupon-result-row">
-                                                <span class="col-xs-7" >
-                                                    Mã giảm giá: <b class="txtCouponCode"></b><br>
-                                                    <label class="text-edit">Chỉnh sửa</label>
-                                                </span>
-                                                <span class="txtCouponValue text-pr-mb"></span>
-                                            </label> -->
                                             <label class="pr0 pl0" >
                                                 <span>Tổng tiền: </span>
                                                 <span class="text-total-fare text-pr-mb text-red">

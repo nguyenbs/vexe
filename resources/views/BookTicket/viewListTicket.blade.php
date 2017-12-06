@@ -694,7 +694,7 @@
           <div class="col-md-12 col-xs-12 ">
             <h6 class="text-wblue thin200 pull-left pl5 selfie ">{{ trans('vexe.slogan')}}</h6>
             <img class="logo-sm " src="../images/vexe/logo-sm.svg " alt=" ">
-            <h6 class="text-wblue thin200 pull-right pr5 ">{{ trans('vexe.question_contact')}}:  <b><a class="hotline-link " href="tel:{{ $hot_line }} ">{{ $hot_line }}</a></b></h6>
+            <h6 class="text-wblue thin200 pull-right pr5 ">{{ trans('vexe.question_contact')}}:  <b><a class="hotline-link " href="tel:{{ $data_configView['hot-line'] }} ">{{ $data_configView['hot-line'] }}</a></b></h6>
           </div>
         </div>
       </div>

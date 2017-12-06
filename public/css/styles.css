@@ -1517,13 +1517,13 @@ tbody {
   border: 0 !important;
 }
 
-.filter-table td {
+/*.filter-table td {
   background: url(../images/filter.svg) no-repeat 100%;
   background-size: 12px;
   background-position-x: 80px;
   background-position-y: 5px;
   width: 125px !important;
-}
+}*/
 
 .dvSearchFilter {
   background: #efefef;
@@ -5536,4 +5536,9 @@ label {
 }
 .header-row{
   margin-bottom: 10px;
+}
+
+.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+    top: 100%;
+    bottom: auto;
 }

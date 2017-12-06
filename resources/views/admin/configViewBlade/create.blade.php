@@ -42,8 +42,13 @@
                                         </span>   
                                     @endif      
                        <div class="form-group">
-                            <div style="margin-bottom: 15px;color: #888;">Nội dung:</div>
+                            <div style="margin-bottom: 15px;color: #888;">Nội dung tiếng Việt:</div>
                               <textarea class="form-control" rows="10" id="value" name="value" placeholder="Nội dung">{{ old('content') }}</textarea>
+                                    
+                        </div>
+                         <div class="form-group">
+                            <div style="margin-bottom: 15px;color: #888;">Nội dung tiếng Anh:</div>
+                              <textarea class="form-control" rows="10" id="value_en" name="value" placeholder="Nội dung">{{ old('content') }}</textarea>
                                     
                         </div>
                      </div>

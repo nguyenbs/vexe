@@ -4,15 +4,17 @@ return array(
 	//Header Footer
 	'title_page' => 'Book Ticket',
 	'home_page' => 'Home Page',
-	'check_ticket' => 'Check ticket',
-	'cancel_ticket' => 'Cancel ticket',
+	'check_ticket' => 'Check Ticket',
+	'cancel_ticket' => 'Cancel Ticket',
 	'contact'  => 'Contact',
 	'news' => 'News',
-	'management_page' => 'Management page',
+	'management_page' => 'Management Page',
 	'logout' => 'Logout',
 	'login'  => 'Login',
 	'car_cpm' => 'Car company',
-
+	'language'	=> 'Language',
+	'eng'  => 'English',
+	'vietnamese' => 'Vietnamese',
 
 	//Home Page
 	'one_way' => "One way",
@@ -22,6 +24,7 @@ return array(
 	'no_address' => 'No address yet',
 	'date_start' => 'Date start',
 	'date_back'  =>  'Date back',
+	'choose_time' => 'Pick the date',
 	'find'      => 'Search',
 	'book_ticket_way' => 'Book ticket routes',
 	'hanoi' => 'HA NOI',
@@ -31,6 +34,7 @@ return array(
 	'nhatrang' => 'NHA TRANG',
 	'money_ticket' => '$',
 	'ticket' => 'ticket',
+	'rate' => 'rate',
 	'get_date' => 'Select day',
 	'show_more' => 'Show more',
 	'customers_talk' => 'Customers talk about us',

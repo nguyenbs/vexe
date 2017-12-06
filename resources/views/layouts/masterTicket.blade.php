@@ -53,12 +53,7 @@
                 <li><a href="{{ route('ticket.cancelTicket') }}" class="home">{{ trans('vexe.cancel_ticket')}} </a></li>
                 <li><a href="{{ route('ticket.contact.us') }}" class="home">{{ trans('vexe.contact')}}</a></li>
                 <li><a href="{{ route('news.index') }}" class="home">{{ trans('vexe.news')}}</a></li>
-                <li>
-                  <select class="form-control" id="languageSwitcher">
-                    <option value="vi" {{ Lang::locale() === 'vi' ? 'selected' : '' }}>Vi</option>
-                    <option value="en" {{ Lang::locale() === 'en' ? 'selected' : '' }}>Eng</option>
-                  </select>
-                </li>
+
                 <li>
                       
                             @if (Auth::guard('web')->check())
@@ -84,6 +79,13 @@
                             @endif
                             
                         </li>
+                   <li>
+                    <select class="form-control" id="languageSwitcher">
+                      <option value="">{{trans('vexe.language')}}</option>
+                      <option value="vi">{{trans('vexe.vietnamese')}}</option>
+                      <option value="en" {{-- {{ Lang::locale() === 'en' ? 'selected' : '' }} --}}>{{trans('vexe.eng')}}</option>
+                    </select>
+                  </li>
                 
               </ul>
             </div>
@@ -136,7 +138,7 @@
                 <img itemprop="logo" src="{{URL::asset($img_logo_footer)}}" alt="" class="logo-1 img-responsive">
               </a>
             </div>
-            {!! $footer_info !!}
+            {!! $data_configView['footer-info'] !!}
             </div>
             <!-- Start Mixpanel Partner -->
             <div style="float: left">

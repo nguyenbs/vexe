@@ -76,8 +76,8 @@
     <div class="container">
       <div >
         <h2 class="text-center h2-text col-txt">
-        <span>{{ $content_itinerary }}</span>
-        <MARQUEE class="text-run"><b>{{ $text_slide }}</b></MARQUEE>
+        <span>{{ $data_configView['content-itinerary'] }}</span>
+        <MARQUEE class="text-run"><b>{{ $data_configView['text-slide'] }}</b></MARQUEE>
         </h2>
         <div class="clearfix" style="height: 44px">
           <ul class="nav nav-tabs clearfix a-link" role="tablist">

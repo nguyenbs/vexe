@@ -26,8 +26,12 @@
                <td>{{ $data[ 'name' ] }}</td>
             </tr>
             <tr>
-               <td>Nội Dung</td>
+               <td>Nội Dung Tiếng Việt</td>
                <td>{!! $data[ 'value' ] !!} </td>
+            </tr>
+            <tr>
+               <td>Nội Dung Tiếng Anh</td>
+               <td>{!! $data[ 'value_en' ] !!} </td>
             </tr>
             <tr>
                <td>Trạng Thái</td>

@@ -18,7 +18,7 @@ class Station extends Model
     	return $this->hasMany('App\Models\Image','content_id');
     }
     public function places(){
-    	return $this->belongTo('App\Models\Place','station_id');
+    	return $this->belongsTo('App\Models\Place','station_id');
     }
     public function car_company(){
     	return $this->hasMany('App\Models\CarCompany','station_id');
