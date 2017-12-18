@@ -201,17 +201,17 @@
                 <img itemprop="logo" src="{{url('images/vexe/icon-vxr.svg')}}" alt="" class="logo-1 img-responsive">
               </a>
             </div>
-            <p>Bản quyền © 2017 thuộc về <span itemprop="name">TuanViet</span></p>
+            <p>Bản quyền © 2017 thuộc về <span itemprop="name">Khoa học tự nhiên</span></p>
             <p>
-              Tên công ty: CÔNG TY CỔ PHẦN TESLA VIỆT NAM
-              <br> Địa chỉ đăng ký kinh doanh: 164 Khuất Duy Tiến, Thanh Xuân, Hà Nội.
+              Trường đại học khoa học tự nhiên
+              <br> Địa chỉ: Số 334 Nguyễn Trãi - Thanh Xuân - Hà Nội
             </p>
-            <div class="text-p1">
+            <!-- <div class="text-p1">
               <p>
                 Địa chỉ:
                 <a href="#" title="Xem bản đồ" target="_blank"><span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">164 Khuất Duy Tiến,</span>, <span itemprop="addressLocality">Thanh Xuân</span>, <span itemprop="addressRegion">Hà Nội.</span>, <span itemprop="addressCountry">Việt Nam</span></span></a>
               </p>
-            </div>
+            </div> -->
             <!-- Start Mixpanel Partner -->
             <div style="float: left">
               <a href="#" rel="nofollow">

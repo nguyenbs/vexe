@@ -304,11 +304,14 @@ class BookTicketController extends Controller
            $this ->viewData = array(
           'datas' => $datas,
           'email'      => $email,
-          );
-          //Mail::send( 'BookTicket.mail', $this->viewData,function( $msg ) use( $email ){
-          //$msg->from( 'vietnt.hn@gmail.com','Tuấn Việt' );
-         // $msg->to( $email )->subject( 'Thông Tin Đặt Vé Xe' );
-         //});           
+          );  
+          // Mail::send('BookTicket.mail', function ($message) use ($email)
+          //   {
+          //   $message->from('tranmaianhnd@gmail.com', 'Tapxi');
+          //   $message->to($email, 'tranmaianhnd@gmail.com');
+          //  $message->subject('Tapxi');
+          //  });
+          
           return redirect("/checkout/" . $bookTicket->id);
         } else {
           return redirect()->back();

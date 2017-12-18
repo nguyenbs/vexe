@@ -5,7 +5,7 @@
    <!-- BEGIN HEAD -->
    <head>
       <meta charset="utf-8" />
-      <title>Đăng nhập | Hệ thống Zent Group</title>
+      <title>Đăng nhập</title>
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta content="" name="description" />
@@ -51,7 +51,7 @@
 
       @yield('content')
 
-      <div class="copyright"> 2016 © ZentGroup. </div>
+      <div class="copyright"> 2017 @ Khoa học tự nhiên </div>
       <!--[if lt IE 9]>
       <script src="../assets/global/plugins/respond.min.js"></script>
       <script src="../assets/global/plugins/excanvas.min.js"></script> 
