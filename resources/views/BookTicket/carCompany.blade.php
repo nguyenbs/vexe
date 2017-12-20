@@ -203,11 +203,11 @@
                     </div>
                     <!--End#row-->
                     <div class="row" style="margin-top: 26px;">
-                        <div class="route-search-panel">
-                            <div class="container">
-                              <div >
+                        <div class="route-search-panel padd-bus-tab">
+                            <div class="tab-bus-route">
+                              <div class="padd-bus-tab">
                                 <h2 class="text-center h2-text col-txt" style="margin-bottom: 20px;text-align: left;">
-                                <span>{{ $content_itinerary }}</span>
+                                <span>{{ $data_configView['content-itinerary'] }}</span>
                                 <!-- <MARQUEE SCROLLDELAY=10 class="text-run"><b>Cần Thơ</b></MARQUEE>
                                 <MARQUEE SCROLLDELAY=20 class="text-run"><b>Hà Nội</b></MARQUEE>
                                 <MARQUEE SCROLLDELAY=70 class="text-run"><b>Hồ Chí Minh</b></MARQUEE>
