@@ -3,8 +3,9 @@
 @section('content')
 <!-- BEGIN LOGO -->
       <div class="logo">
-         <a href="{{ URL::asset('/login') }}">
-         <img src="{{ asset('assets/layouts/layout/img/logo-big.png')}}" alt="" /> </a>
+         <a href="{{ URL::asset('/login') }}" style="color:#fff; font-size:20px; text-transform: uppercase;">
+          QUẢN Lý HỆ THỐNG ĐẶT VÉ XE KHÁCH CHẤT LƯỢNG CAO
+        </a>
       </div>
       <!-- END LOGO -->
       <!-- BEGIN LOGIN -->
