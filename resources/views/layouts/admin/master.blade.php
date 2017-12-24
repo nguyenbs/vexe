@@ -52,7 +52,14 @@
              div.mce-fullscreen {
                 z-index: 999999;
                 }
-
+            .page-header.navbar .page-logo>a ,.login.logo a {
+                display: inline-block;
+                float: left;
+                vertical-align: middle;
+                color: #ec5d06;
+                font-size: 18px;
+                padding-top: 10px;
+            }
          </style> 
         @yield('head')
 
@@ -67,7 +74,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="{{-- {{URL::asset('')}} --}}">
-                        <img src="{{url('img/logo.png')}}" alt="logo" class="logo-default" /> </a>
+                        BookTicket </a>
                     <div class="menu-toggler sidebar-toggler"> </div>
                 </div>
                 <!-- END LOGO -->

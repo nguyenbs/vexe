@@ -2782,6 +2782,7 @@ select.form-control {
   border-bottom: 1px solid #343434;
   font-weight: bold;
   font-size: 13px !important;
+  background: #aaadd2;
 }
 
 .text-ten-thousand {
@@ -5329,10 +5330,6 @@ p.check {
   margin: 20px 0px;
 }
 
-
-
-
-}
 .alert-text {
   margin-top: 10px;
   font-style: italic;
@@ -5632,7 +5629,8 @@ label:after {
   padding-left: 25px;
 }
 
-./*nav-tabs {
+
+/*.nav-tabs {
   margin-top : 100px;
 }
 
@@ -5794,51 +5792,6 @@ label {
   padding-top: 40px;
 }
 
-
-
-/*nav-tabs {
-  margin-top : 100px;
-}
-
-.nav-tabs > li > a {
-  border-radius: 0px;
-  padding: 30px 50px;
-  background-color: rgb(255, 179, 0);
-}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  background-color: rgb(255, 179, 0);
-  color: #fff;
-}
-
-.nav-tabs > li.active > a:before {
-  width: 0;
-  height: 0;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 20px solid rgb(255, 179, 0);
-  position: absolute;
-  content: "";
-  bottom: -12px;
-  left: 50px;
-}
-
-.nav-tabs > li {
-  line-height: 30px;
-}
-*/
-
-/*.nav-tabs > li.active > a:before {
-  width: 0;
-  height: 0;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 20px solid rgb(255, 179, 0);
-  position: absolute;
-  content: "";
-  bottom: -12px;
-  left: 50px;
-}*/
 .fa-bus {
   font-size: 40px !important;
   text-align: center;
@@ -5979,34 +5932,4 @@ label {
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: 100%;
   bottom: auto;
-}
-.tab-bus-route ul.routes-list {
-  margin-top: 10px;
-}
-.tab-bus-route ul.routes-list li {
-  border-bottom: 1px #dadce2 solid;
-  width: 100%;
-  height: 60px;
-}
-.tab-bus-route ul.routes-list li span {
-  width: 40%;
-  font-weight: 700;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-.tab-bus-route ul.routes-list li span.price {
-  color: #ea740a;
-  width: 35%;
-  padding-top: 5px;
-  font-size: 18px;
-  font-weight: 700;
-}
-.route-search-panel.padd-bus-tab {
-  margin: 0px 15px;
-  background: #e7e9f3;
-  border-radius: 10px;
-}
-.padd-bus-tab {
-  padding: 10px 15px;
 }
