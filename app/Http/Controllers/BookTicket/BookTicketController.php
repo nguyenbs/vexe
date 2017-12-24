@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Request\CheckTicketRequest;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
-use App\models\BookTicket;
+use App\Models\BookTicket;
 use DB;
 use Log;
 use Validator;
